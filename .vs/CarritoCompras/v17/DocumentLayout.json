@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HORACIO\\Desktop\\Tareas entregadas\\6\u00B0 A\u00F1o\\CarritoCompra\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{28B4E862-42FB-44FC-971B-DDF797AA57CF}|CarritoCompras\\CarritoCompras.csproj|c:\\users\\horacio\\desktop\\tareas entregadas\\6\u00B0 a\u00F1o\\carritocompra\\carritocompras\\itemcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28B4E862-42FB-44FC-971B-DDF797AA57CF}|CarritoCompras\\CarritoCompras.csproj|solutionrelative:carritocompras\\itemcarrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B4E862-42FB-44FC-971B-DDF797AA57CF}|CarritoCompras\\CarritoCompras.csproj|c:\\users\\horacio\\desktop\\tareas entregadas\\6\u00B0 a\u00F1o\\carritocompra\\carritocompras\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28B4E862-42FB-44FC-971B-DDF797AA57CF}|CarritoCompras\\CarritoCompras.csproj|solutionrelative:carritocompras\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28B4E862-42FB-44FC-971B-DDF797AA57CF}|CarritoCompras\\CarritoCompras.csproj|c:\\users\\horacio\\desktop\\tareas entregadas\\6\u00B0 a\u00F1o\\carritocompra\\carritocompras\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28B4E862-42FB-44FC-971B-DDF797AA57CF}|CarritoCompras\\CarritoCompras.csproj|solutionrelative:carritocompras\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ItemCarrito.cs",
+              "DocumentMoniker": "C:\\Users\\HORACIO\\Desktop\\Tareas entregadas\\6\u00B0 A\u00F1o\\CarritoCompra\\CarritoCompras\\ItemCarrito.cs",
+              "RelativeDocumentMoniker": "CarritoCompras\\ItemCarrito.cs",
+              "ToolTip": "C:\\Users\\HORACIO\\Desktop\\Tareas entregadas\\6\u00B0 A\u00F1o\\CarritoCompra\\CarritoCompras\\ItemCarrito.cs",
+              "RelativeToolTip": "CarritoCompras\\ItemCarrito.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T03:33:51.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\HORACIO\\Desktop\\Tareas entregadas\\6\u00B0 A\u00F1o\\CarritoCompra\\CarritoCompras\\Producto.cs",
+              "RelativeDocumentMoniker": "CarritoCompras\\Producto.cs",
+              "ToolTip": "C:\\Users\\HORACIO\\Desktop\\Tareas entregadas\\6\u00B0 A\u00F1o\\CarritoCompra\\CarritoCompras\\Producto.cs",
+              "RelativeToolTip": "CarritoCompras\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T03:26:45.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\HORACIO\\Desktop\\Tareas entregadas\\6\u00B0 A\u00F1o\\CarritoCompra\\CarritoCompras\\Categoria.cs",
+              "RelativeDocumentMoniker": "CarritoCompras\\Categoria.cs",
+              "ToolTip": "C:\\Users\\HORACIO\\Desktop\\Tareas entregadas\\6\u00B0 A\u00F1o\\CarritoCompra\\CarritoCompras\\Categoria.cs",
+              "RelativeToolTip": "CarritoCompras\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T03:22:42.906Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
