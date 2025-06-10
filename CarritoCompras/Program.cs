@@ -6,7 +6,8 @@ namespace CarritoCompras
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Tienda tienda = new Tienda();
+            tienda.MostarMenu();
         }
     }
 }
