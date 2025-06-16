@@ -8,7 +8,7 @@ namespace CarritoCompras
 {
     class Producto
     {
-        public static int contador = 1;
+        private static int contador = 1;
 
         public int Codigo { get; private set; }
         public string Nombre { get; set; }

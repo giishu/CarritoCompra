@@ -36,8 +36,8 @@ namespace CarritoCompras
             int cantidadTotal = cantidad;
             if(itemExistente != null)
             {
-            }
                 cantidadTotal = cantidad + itemExistente.Cantidad;
+            }
 
             if (cantidadTotal > producto.Stock)
             {
@@ -80,19 +80,19 @@ namespace CarritoCompras
             return false;
         }
 
-        public decimal CalculoSubtotal()
+        public decimal CalcularSubtotal()
         {
             decimal total = 0;
             foreach(ItemCarrito item in Items)
             {
-                total += item.CalcularSubtotal();
+                total += item.Subtotal();
             }
             return total;
         }
 
         public decimal CalcularTotal()
         {
-            decimal subtotal = CalculoSubtotal();
+            decimal subtotal = CalcularSubtotal();
             return subtotal * 1.21m;
         }
 

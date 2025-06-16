@@ -10,7 +10,7 @@ namespace CarritoCompras
     {
         public List<Producto> Productos { get; private set; }
         public List<Categoria> Categorias { get; private set; }
-        public Carrito carrito;
+        private Carrito carrito;
 
         public Tienda()
         {
@@ -20,9 +20,26 @@ namespace CarritoCompras
             Inicializar();
         }
 
-        public void inicializar()
+        private void Inicializar()
         {
-            // completar con categorias y productos
+            var electronica = new Categoria("Electrónica", "Dispositivos electrónicos y gadgets");
+            var ropa = new Categoria("Ropa", "Prendas de vestir para hombres y mujeres");
+            var alimentos = new Categoria("Alimentos", "Productos alimenticios y bebidas");
+
+            Categorias.AddRange(new[] { electronica, ropa, alimentos });
+
+            Productos.AddRange(new[]
+            {
+        new Producto("Samsung J5", 899.99m, 10, electronica),
+        new Producto("Laptop para programadores", 1299.99m, 5, electronica),
+        new Producto("Ipad pro", 199.50m, 8, electronica),
+        new Producto("Remera con estamapdo de Los enanitos verdes", 24.99m, 20, ropa),
+        new Producto("Jeans oversize fashion", 59.99m, 15, ropa),
+        new Producto("Zapatillas ardidas", 39.99m, 10, ropa),
+        new Producto("Agua mineral 1,5L", 9.99m, 15, alimentos),
+        new Producto("Barrita kinder", 2.50m, 30, alimentos)
+    });
+
         }
 
         public void MostrarCategorias()
@@ -30,7 +47,7 @@ namespace CarritoCompras
             Console.WriteLine("\n=== CATEGORÍAS DISPONIBLES ===");
             for(int i = 0; i < Categorias.Count; i++)
             {
-                Console.WriteLine($"{i+1}. {Categorias[i]}")
+                Console.WriteLine($"{i + 1}. {Categorias[i]}");
             }
         }
 
@@ -157,9 +174,76 @@ namespace CarritoCompras
             }
         }
 
-        public void MostarMenu()
+        public void MostrarMenu()
         {
-            // completar menu principal. aca va el switch
+            bool salir = false;
+
+            while (!salir)
+            {
+                Console.Clear();
+                Console.WriteLine("=== MENÚ PRINCIPAL ===");
+                Console.WriteLine("1. Ver categorías disponibles");
+                Console.WriteLine("2. Ver todos los productos");
+                Console.WriteLine("3. Ver productos por categoría");
+                Console.WriteLine("4. Agregar producto al carrito");
+                Console.WriteLine("5. Eliminar producto del carrito");
+                Console.WriteLine("6. Ver contenido del carrito");
+                Console.WriteLine("7. Ver total a pagar");
+                Console.WriteLine("8. Finalizar compra");
+                Console.WriteLine("9. Salir");
+                Console.Write("\nSeleccione una opción: ");
+
+                string opcion = Console.ReadLine();
+
+                switch (opcion)
+                {
+                    case "1":
+                        MostrarCategorias();
+                        break;
+
+                    case "2":
+                        MostrarProductos();
+                        break;
+
+                    case "3":
+                        MostrarProductosPorCategoria();
+                        break;
+
+                    case "4":
+                        AgregarProductoAlCarrito();
+                        break;
+
+                    case "5":
+                        EliminarProductoCarrito();
+                        break;
+
+                    case "6":
+                        carrito.Contenido();
+                        break;
+
+                    case "7":
+                        Console.WriteLine($"\nTOTAL A PAGAR (con IVA): {carrito.CalcularTotal():C2}");
+                        break;
+
+                    case "8":
+                        FinalizarCompra();
+                        break;
+
+                    case "9":
+                        salir = true;
+                        break;
+
+                    default:
+                        Console.WriteLine("\nOpción no válida. Por favor ingrese un número del 1 al 9.");
+                        break;
+                }
+
+                if (!salir && opcion != "9")
+                {
+                    Console.WriteLine("\nPresione cualquier tecla para continuar");
+                    Console.ReadKey();
+                }
+            }
         }
 
     }

@@ -7,7 +7,7 @@ namespace CarritoCompras
         static void Main(string[] args)
         {
             Tienda tienda = new Tienda();
-            tienda.MostarMenu();
+            tienda.MostrarMenu();
         }
     }
 }
