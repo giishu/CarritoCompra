@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z9iWSXnO4uU=",
+  "dgSpecHash": "A6qr7W946zw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Documents\\Poli\\SEXTO AÑO\\Adaptación al Ambiente de Trabajo I\\carrito repo\\CarritoCompras\\CarritoCompras.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\nicol\\Desktop\\Poli\\c-sharp\\CarritoCompra\\CarritoCompras\\CarritoCompras.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

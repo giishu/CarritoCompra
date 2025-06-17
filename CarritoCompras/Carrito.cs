@@ -58,12 +58,12 @@ namespace CarritoCompras
             return true;
         }
 
-        public bool EliminarProducto(int codigoProducto)
+        public bool EliminarProducto(int codigoProducto, int cantidad = 0)
         {
             ItemCarrito itemAEliminar = null;
             foreach(ItemCarrito item in Items)
             {
-                if(itemAEliminar.Producto.Codigo == codigoProducto)
+                if(item.Producto.Codigo == codigoProducto)
                 {
                     itemAEliminar = item;
                     break;
@@ -72,9 +72,18 @@ namespace CarritoCompras
 
             if(itemAEliminar != null)
             {
-                Items.Remove(itemAEliminar);
-                Console.WriteLine($"Producto eliminado: {itemAEliminar.Producto.Nombre}");
-                return true;
+                if (cantidad >= itemAEliminar.Cantidad || cantidad <= 0)
+                {
+                    Items.Remove(itemAEliminar);
+                    Console.WriteLine($"Producto eliminado completamente: {itemAEliminar.Producto.Nombre}");
+                    return true;
+                }
+                else
+                {
+                    itemAEliminar.Cantidad -= cantidad;
+                    Console.WriteLine($"Se eliminaron {cantidad} unidades de {itemAEliminar.Producto.Nombre}");
+                    return true;
+                }
             }
             Console.WriteLine("No se encontro el producto a eliminar");
             return false;
@@ -108,7 +117,7 @@ namespace CarritoCompras
             {
                 Console.WriteLine(item);
             }
-            Console.WriteLine("\nSubtotal: ${CalcularSubtotal():F2}");
+            Console.WriteLine($"\nSubtotal: ${CalcularSubtotal():F2}");
             Console.WriteLine($"Total: ${CalcularTotal():F2}");
         }
 

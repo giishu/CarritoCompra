@@ -91,7 +91,8 @@ namespace CarritoCompras
 
         public void AgregarProductoAlCarrito()
         {
-            Console.Write("Ingrese el codigo del producto: ");
+            MostrarProductos();
+            Console.Write("\nIngrese el codigo del producto: ");
             if(int.TryParse(Console.ReadLine(), out int codigo))
             {
                 Producto productoEncontrado = null;
@@ -129,14 +130,37 @@ namespace CarritoCompras
 
         public void EliminarProductoCarrito()
         {
-            Console.Write("Ingrese la cantidad a eliminar: ");
-            if(int.TryParse(Console.ReadLine(), out int codigo))
+            if(carrito.Items.Count == 0)
             {
-                carrito.EliminarProducto(codigo);
+                Console.WriteLine("El carrito está vacío, no se puede eliminar ningún producto");
+                return;
+            }
+
+            carrito.Contenido();
+
+            Console.Write("\nIngrese el código del producto a eliminar: ");
+            if (!int.TryParse(Console.ReadLine(), out int codigoProducto))
+            {
+                Console.WriteLine("Código inválido.");
+                return;
+            }
+
+            Console.Write("Ingrese la cantidad a eliminar (0 o negativo para eliminar todo): ");
+            if (!int.TryParse(Console.ReadLine(), out int cantidad) || cantidad <= 0)
+            {
+                Console.WriteLine("Error: Cantidad inválida. Se eliminará el producto completo.");
+            }
+
+            bool resultado = carrito.EliminarProducto(codigoProducto, cantidad);
+
+            if (!resultado)
+            {
+                Console.WriteLine("No se pudo completar la operación. Verifique el código del producto.");
             }
             else
             {
-                Console.WriteLine("El código es inválido");
+                Console.WriteLine("\nCarrito actualizado: ");
+                carrito.Contenido();
             }
         }
 

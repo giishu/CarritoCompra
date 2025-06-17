@@ -27,5 +27,9 @@ namespace CarritoCompras
             }
             return subtotal;
         }
+        public override string ToString()
+        {
+            return $"{Producto.Codigo} - {Producto.Nombre} x{Cantidad} - ${Producto.Precio:F2} c/u (Total: ${(Cantidad * Producto.Precio):F2})";
+        }
     }
 }
